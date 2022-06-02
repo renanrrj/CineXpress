@@ -8,16 +8,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.Model
 {
-    public partial class CadastroFuncionario
+    [Table("tb_Funcionario")]
+    public partial class TbFuncionario
     {
-        public CadastroFuncionario()
+        public TbFuncionario()
         {
-            Relacional = new HashSet<Relacional>();
+            TbRelacional = new HashSet<TbRelacional>();
         }
 
         [Key]
-        [Column("idF")]
-        public int IdF { get; set; }
+        public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
         public string NomeFuncionario { get; set; }
@@ -38,6 +38,6 @@ namespace CineXpress.Model
         public string Celular { get; set; }
 
         [InverseProperty("IdFuncionarioNavigation")]
-        public virtual ICollection<Relacional> Relacional { get; set; }
+        public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }

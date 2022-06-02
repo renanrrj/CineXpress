@@ -8,16 +8,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.Model
 {
-    public partial class CadastroCliente
+    [Table("tb_Cliente")]
+    public partial class TbCliente
     {
-        public CadastroCliente()
+        public TbCliente()
         {
-            Relacional = new HashSet<Relacional>();
+            TbRelacional = new HashSet<TbRelacional>();
         }
 
         [Key]
-        [Column("idC")]
-        public int IdC { get; set; }
+        public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
         public string NomeCadastro { get; set; }
@@ -37,7 +37,7 @@ namespace CineXpress.Model
         [Unicode(false)]
         public string Celular { get; set; }
 
-        [InverseProperty("IdCadastroNavigation")]
-        public virtual ICollection<Relacional> Relacional { get; set; }
+        [InverseProperty("IdClienteNavigation")]
+        public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }

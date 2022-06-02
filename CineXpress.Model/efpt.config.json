@@ -1,6 +1,6 @@
 ﻿{
    "CodeGenerationMode": 2,
-   "ContextClassName": "ContextCineXpress",
+   "ContextClassName": "Context_CineXpress",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
    "FilterSchemas": false,
@@ -14,23 +14,23 @@
    "SelectedToBeGenerated": 0,
    "Tables": [
       {
-         "Name": "[dbo].[CadastroCliente]",
+         "Name": "[dbo].[tb_Cliente]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[CadastroFuncionario]",
+         "Name": "[dbo].[tb_Filme]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Filme]",
+         "Name": "[dbo].[tb_Funcionario]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Relacional]",
+         "Name": "[dbo].[tb_Relacional]",
          "ObjectType": 0
       }
    ],
-   "UiHint": "DESKTOP-JDE8Q70\\SQLEXPRESS.CineXpressDB5p",
+   "UiHint": "PARNAITA01\\SQLEXPRESS.CineXpressDB5p",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
    "UseDbContextSplitting": false,

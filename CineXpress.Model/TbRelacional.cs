@@ -8,25 +8,26 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.Model
 {
-    public partial class Relacional
+    [Table("tb_Relacional")]
+    public partial class TbRelacional
     {
+        [Key]
+        public int Id { get; set; }
         [Column("idFilme")]
         public int? IdFilme { get; set; }
-        [Column("idCadastro")]
-        public int? IdCadastro { get; set; }
+        [Column("idCliente")]
+        public int? IdCliente { get; set; }
         [Column("idFuncionario")]
         public int? IdFuncionario { get; set; }
-        [Key]
-        public int IdR { get; set; }
 
-        [ForeignKey("IdCadastro")]
-        [InverseProperty("Relacional")]
-        public virtual CadastroCliente IdCadastroNavigation { get; set; }
+        [ForeignKey("IdCliente")]
+        [InverseProperty("TbRelacional")]
+        public virtual TbCliente IdClienteNavigation { get; set; }
         [ForeignKey("IdFilme")]
-        [InverseProperty("Relacional")]
-        public virtual Filme IdFilmeNavigation { get; set; }
+        [InverseProperty("TbRelacional")]
+        public virtual TbFilme IdFilmeNavigation { get; set; }
         [ForeignKey("IdFuncionario")]
-        [InverseProperty("Relacional")]
-        public virtual CadastroFuncionario IdFuncionarioNavigation { get; set; }
+        [InverseProperty("TbRelacional")]
+        public virtual TbFuncionario IdFuncionarioNavigation { get; set; }
     }
 }

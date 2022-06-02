@@ -8,16 +8,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.Model
 {
-    public partial class Filme
+    [Table("tb_Filme")]
+    public partial class TbFilme
     {
-        public Filme()
+        public TbFilme()
         {
-            Relacional = new HashSet<Relacional>();
+            TbRelacional = new HashSet<TbRelacional>();
         }
 
         [Key]
-        [Column("idfl")]
-        public int Idfl { get; set; }
+        public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
         public string NomeFilme { get; set; }
@@ -30,6 +30,6 @@ namespace CineXpress.Model
         public TimeSpan? Duracao { get; set; }
 
         [InverseProperty("IdFilmeNavigation")]
-        public virtual ICollection<Relacional> Relacional { get; set; }
+        public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }
