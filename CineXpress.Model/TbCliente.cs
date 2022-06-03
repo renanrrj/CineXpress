@@ -17,21 +17,31 @@ namespace CineXpress.Model
         }
 
         [Key]
+        [Display(Name = "Código")] // Data Annotation
         public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+
+        [Display(Name = "Nome")] // Data Annotation
         public string NomeCadastro { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+
+        [Display(Name = "E-Mail")] // Data Annotation
         public string Email { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+
         public string Senha { get; set; }
         [Column("CPF")]
         [StringLength(15)]
         [Unicode(false)]
+
+        [Display(Name = "CPF")] // Data Annotation
         public string Cpf { get; set; }
         [Column(TypeName = "date")]
+
+        [Display(Name = "Data de nascimento")] // Data Annotation
         public DateTime? DataNascimento { get; set; }
         [StringLength(12)]
         [Unicode(false)]

@@ -1,17 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CineXpress.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.View.Controllers
 {
     public class ClienteController : Controller
     {
         // GET: ClienteController
-        Context_CineXpress db;
-        public ClienteController()
+        Context_CineXpress db; // Contexto
+        public ClienteController() // COntrutor do contexto
         {
             db = new Context_CineXpress();
         }
+
         public ActionResult Cliente()
         {
             List<TbCliente> oLista = db.TbCliente.ToList();
@@ -19,12 +21,13 @@ namespace CineXpress.View.Controllers
         }
 
         // GET: ClienteController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Detalhes(int id)
         {
-            return View();
+            TbCliente oCliente = db.TbCliente.Find(id);
+            return View(oCliente);
         }
 
-        // GET: ClienteController/Create
+        // GET: ClienteController/Create--------------------------------------------------------        CREATE
         public ActionResult Create()
         {
             return View();
@@ -38,11 +41,10 @@ namespace CineXpress.View.Controllers
             db.TbCliente.Add(oCat);
             db.SaveChanges();
             return RedirectToAction("Cliente");
-
         }
 
-        // GET: ClienteController/Edit/5
-        public ActionResult Edit(int id)
+        // GET: ClienteController/Edit/5-------------------------------------------------------     EDITAR
+        public ActionResult Editar(int id)
         {
             TbCliente oCat = db.TbCliente.Find(id);
             return View(oCat);
@@ -51,7 +53,7 @@ namespace CineXpress.View.Controllers
         // POST: ClienteController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, TbCliente oCat)
+        public ActionResult Editar(int id, TbCliente oCat)
         {
             var oCatBanco = db.TbCliente.Find(id);
             oCatBanco.NomeCadastro = oCat.NomeCadastro;
@@ -65,10 +67,13 @@ namespace CineXpress.View.Controllers
             return RedirectToAction("Cliente");
         }
 
-        // GET: ClienteController/Delete/5
+        // GET: ClienteController/Delete/5----------------------------------------------         DELETE
         public ActionResult Delete(int id)
         {
-            return View();
+            TbCliente oCliente = db.TbCliente.Find(id);
+            db.Entry(oCliente).State = EntityState.Deleted;
+            db.SaveChanges();
+            return RedirectToAction(nameof(Cliente));
         }
 
         // POST: ClienteController/Delete/5
