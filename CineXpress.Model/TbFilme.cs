@@ -17,17 +17,24 @@ namespace CineXpress.Model
         }
 
         [Key]
+        [Display(Name = "Cód. Filme")]
         public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+        [Display(Name = "Título")]
         public string NomeFilme { get; set; }
+        
         [StringLength(100)]
         [Unicode(false)]
+        [Display(Name = "Sinopse")]
         public string Sinopse { get; set; }
+        [Display(Name = "Tempo de duração")]
         public TimeSpan? Duracao { get; set; }
         [StringLength(10)]
         [Unicode(false)]
+        [Display(Name = "Classificação")]
         public string Classificacao { get; set; }
+        
 
         [InverseProperty("IdFilmeNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }

@@ -17,12 +17,15 @@ namespace CineXpress.Model
         }
 
         [Key]
+        [Display(Name = "Cód. Funcionário")]
         public int Id { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+        [Display(Name = "Nome")]
         public string NomeFuncionario { get; set; }
         [StringLength(50)]
         [Unicode(false)]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
         [StringLength(50)]
         [Unicode(false)]
@@ -30,11 +33,14 @@ namespace CineXpress.Model
         [Column("CPF")]
         [StringLength(15)]
         [Unicode(false)]
+        [Display(Name = "CPF")]
         public string Cpf { get; set; }
         [Column(TypeName = "date")]
+        [Display(Name = "Data de Nascimento")]
         public DateTime? DataNascimento { get; set; }
         [StringLength(12)]
         [Unicode(false)]
+        [Display(Name = "Celular")]
         public string Celular { get; set; }
 
         [InverseProperty("IdFuncionarioNavigation")]

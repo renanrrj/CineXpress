@@ -3,14 +3,17 @@
 @{
     ViewData["Title"] = "Filme";
 }
+<style>.cor{ color:white;
 
-<h1>Filme</h1>
+    }</style>
+
+<h1 class="cor">Lista de Filmes</h1>
 
 <p>
-    <a asp-action="Criar">Create New</a>
+    <a asp-action="Criar">Novo</a>
 </p>
 <table class="table">
-    <thead>
+    <thead class="cor">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Id) <!--_______-->
@@ -32,7 +35,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="cor">
             <td>
                 @Html.DisplayFor(modelItem => item.Id) <!--_______-->
             </td>
@@ -57,3 +60,5 @@
 }
     </tbody>
 </table>
+
+

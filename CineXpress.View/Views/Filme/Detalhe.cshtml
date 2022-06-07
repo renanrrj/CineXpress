@@ -3,13 +3,37 @@
 @{
     ViewData["Title"] = "Detalhe";
 }
+<style>.cor
+{ 
+    color:white;
+}
+teste
+{
+    display:inline-block;
+}
+.row{
+    font-family:Arial;
+    font-style:initial;
+    Font-weight:bold;
+    font-size:larger;
+}
+ </style>
 
-<h1>Detalhe</h1>
+<h1 class="cor">Detalhes do Filme</h1>
 
-<div>
-    <h4>TbFilme</h4>
+<div class="cor">
+      
     <hr />
+     <div class="text">
+
+
+        
+       <img class="teste" src="/img/carros.jpg" height="400px" width="500px" />
+        </div>
+
+
     <dl class="row">
+      
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.NomeFilme)
         </dt>
@@ -34,6 +58,7 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Duracao)
         </dd>
+     
     </dl>
 </div>
 <div>

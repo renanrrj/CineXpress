@@ -1,0 +1,54 @@
+﻿@model CineXpress.Model.TbCliente
+@{
+    Layout="_LayoutDeslogado";
+    ViewData["Title"] = "Login";
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" aria-label="Close">X</button>
+        @TempData["MensagemErro"]
+    </div>
+}
+<style>.cor{ color:white;
+
+    }</style>
+    
+
+<link rel="stylesheet" href="~/css/Login-Page.css" />
+<div class="container-fluid ps-md-0">
+  <div class="row g-0">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Bem vindo!</h3>
+
+              <!-- Sign In Form -->
+              <form asp-Controller="Login" asp-action="Logar" method="post">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="Email" id="Email" placeholder="name@example.com">
+                  <label for="floatingInput">Login </label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" name="Senha" id="Senha" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+           
+                <div class="d-grid">
+                  <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Login</button>
+                 
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

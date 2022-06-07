@@ -3,13 +3,17 @@
 @{
     ViewData["Title"] = "View";
 }
+<style>.cor{ color:white; class:table;
 
-<h1>View - Lis</h1>
+    }</style>
 
+    <div class="cor">
+<h1>Lista de Clientes</h1>
+    
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Novo</a>
 </p>
-<table class="table">
+<table class="cor">
     <thead>
         <tr>
             <th>
@@ -69,3 +73,4 @@
 }
     </tbody>
 </table>
+</div>

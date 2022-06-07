@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineXpress.View", "CineXpress.View\CineXpress.View.csproj", "{62969607-9CA1-477A-977C-48BD48894D53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineXpress.View", "CineXpress.View\CineXpress.View.csproj", "{62969607-9CA1-477A-977C-48BD48894D53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineXpress.Model", "CineXpress.Model\CineXpress.Model.csproj", "{D8F020D7-E727-48EA-B58A-FA18A90E675B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineXpress.Model", "CineXpress.Model\CineXpress.Model.csproj", "{D8F020D7-E727-48EA-B58A-FA18A90E675B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76892041-13DD-44A4-AEA2-44529D218013}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
