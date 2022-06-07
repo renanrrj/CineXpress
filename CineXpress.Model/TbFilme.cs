@@ -21,13 +21,13 @@ namespace CineXpress.Model
         [StringLength(50)]
         [Unicode(false)]
         public string NomeFilme { get; set; }
-        [StringLength(10)]
-        [Unicode(false)]
-        public string Classificação { get; set; }
         [StringLength(100)]
         [Unicode(false)]
         public string Sinopse { get; set; }
         public TimeSpan? Duracao { get; set; }
+        [StringLength(10)]
+        [Unicode(false)]
+        public string Classificacao { get; set; }
 
         [InverseProperty("IdFilmeNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }

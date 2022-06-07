@@ -1,0 +1,48 @@
+﻿@model CineXpress.Model.TbFilme
+
+@{
+    ViewData["Title"] = "Criar";
+}
+
+<h1>Criar</h1>
+
+<h4>TbFilme</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Criar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeFilme" class="control-label"></label>
+                <input asp-for="NomeFilme" class="form-control" />
+                <span asp-validation-for="NomeFilme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Classificacao" class="control-label"></label>
+                <input asp-for="Classificacao" class="form-control" />
+                <span asp-validation-for="Classificacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sinopse" class="control-label"></label>
+                <input asp-for="Sinopse" class="form-control" />
+                <span asp-validation-for="Sinopse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Duracao" class="control-label"></label>
+                <input asp-for="Duracao" class="form-control" />
+                <span asp-validation-for="Duracao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Filme">Voltar para lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

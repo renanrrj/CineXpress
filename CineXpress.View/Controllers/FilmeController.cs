@@ -5,25 +5,25 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CineXpress.View.Controllers
 {
-    public class FuncionarioController : Controller
+    public class FilmeController : Controller
     {
         // GET: FuncionarioController
         Context_CineXpress db; // Contexto
-        public FuncionarioController() // COntrutor do contexto
+        public FilmeController() // COntrutor do contexto
         {
             db = new Context_CineXpress();
         }
-        public ActionResult Funcionario()
+        public ActionResult Filme()
         {
-            List<TbFuncionario> oLista = db.TbFuncionario.ToList();
+            List<TbFilme> oLista = db.TbFilme.ToList();
             return View(oLista);
         }
 
         // GET: FuncionarioController/Details/5
-        public ActionResult Detalhes(int id)
+        public ActionResult Detalhe(int id)
         {
-            TbFuncionario oFuncionario = db.TbFuncionario.Find(id);
-            return View(oFuncionario);
+            TbFilme oFilme = db.TbFilme.Find(id);
+            return View(oFilme);
         }
 
         // GET: FuncionarioController/Create
@@ -35,44 +35,44 @@ namespace CineXpress.View.Controllers
         // POST: FuncionarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Criar(TbFuncionario oCat)
+        public ActionResult Criar(TbFilme oCat)
         {
-            db.TbFuncionario.Add(oCat);
+            db.TbFilme.Add(oCat);
             db.SaveChanges();
-            return RedirectToAction("Funcionario");
+            return RedirectToAction("Filme");
         }
 
         // GET: FuncionarioController/Edit/5
         public ActionResult Editar(int id)
         {
-            TbFuncionario oCat = db.TbFuncionario.Find(id);
+            TbFilme oCat = db.TbFilme.Find(id);
             return View(oCat);
         }
 
         // POST: FuncionarioController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Editar(int id, TbFuncionario oCat)
+        public ActionResult Editar(int id, TbFilme oCat)
         {
-            var oCatBanco = db.TbFuncionario.Find(id);
-            oCatBanco.NomeFuncionario = oCat.NomeFuncionario;
-            oCatBanco.Email = oCat.Email;
-            oCatBanco.Senha = oCat.Senha;
-            oCatBanco.Cpf = oCat.Cpf;
-            oCatBanco.DataNascimento = oCat.DataNascimento;
-            oCatBanco.Celular = oCat.Celular;
+            var oCatBanco = db.TbFilme.Find(id);
+
+            oCatBanco.NomeFilme = oCat.NomeFilme;
+            oCatBanco.Classificacao = oCat.Classificacao;
+            oCatBanco.Sinopse = oCat.Sinopse;
+            oCatBanco.Duracao = oCat.Duracao;
+
             db.Entry(oCatBanco).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();
-            return RedirectToAction("Funcionario");
+            return RedirectToAction("Filme");
         }
 
         // GET: FuncionarioController/Delete/5
         public ActionResult Delete(int id)
         {
-            TbFuncionario oFuncionario = db.TbFuncionario.Find(id);
-            db.Entry(oFuncionario).State = EntityState.Deleted;
+            TbFilme oFilme = db.TbFilme.Find(id);
+            db.Entry(oFilme).State = EntityState.Deleted;
             db.SaveChanges();
-            return RedirectToAction(nameof(Funcionario));
+            return RedirectToAction(nameof(Filme));
         }
 
         // POST: FuncionarioController/Delete/5

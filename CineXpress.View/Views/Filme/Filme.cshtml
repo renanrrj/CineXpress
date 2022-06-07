@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CineXpress.Model.TbFilme>
+
+@{
+    ViewData["Title"] = "Filme";
+}
+
+<h1>Filme</h1>
+
+<p>
+    <a asp-action="Criar">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id) <!--_______-->
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeFilme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Classificacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sinopse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duracao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id) <!--_______-->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeFilme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Classificacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sinopse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracao)
+            </td>
+            <td>
+                <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Detalhe" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
