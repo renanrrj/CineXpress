@@ -96,3 +96,17 @@ C:\Users\mathe\Downloads\cinema\cinema\CineXpress.Model\obj\Debug\net6.0\refint\
 C:\Users\mathe\Downloads\cinema\cinema\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.pdb
 C:\Users\mathe\Downloads\cinema\cinema\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.genruntimeconfig.cache
 C:\Users\mathe\Downloads\cinema\cinema\CineXpress.Model\obj\Debug\net6.0\ref\CineXpress.Model.dll
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.deps.json
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.runtimeconfig.json
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.dll
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.pdb
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.csproj.AssemblyReference.cache
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.AssemblyInfoInputs.cache
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.AssemblyInfo.cs
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.csproj.CoreCompileInputs.cache
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.dll
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\refint\CineXpress.Model.dll
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.pdb
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.genruntimeconfig.cache
+D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\ref\CineXpress.Model.dll
