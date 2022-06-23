@@ -17,7 +17,7 @@ namespace CineXpress.View.Controllers
             if (User.Identity.IsAuthenticated)
             {
 
-                return RedirectToAction("Filme", "Home");
+                return RedirectToAction("Index", "Home");
 
 
 

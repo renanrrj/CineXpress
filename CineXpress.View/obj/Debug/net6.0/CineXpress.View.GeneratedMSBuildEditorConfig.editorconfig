@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CineXpress.View
+build_property.RootNamespace = CineXpress.View
+build_property.ProjectDir = D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.View\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.View
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Cliente/Cliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Cliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Cliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Cliente/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Cliente/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/BatmanDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcQmF0bWFuRGV0YWxoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/CarrosDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcQ2Fycm9zRGV0YWxoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcQ3JpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/Detalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRGV0YWxoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/Filme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRmlsbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/HotWheelsDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcSG90V2hlZWxzRGV0YWxoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/MaxSteelDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcTWF4U3RlZWxEZXRhbGhlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/ThorDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcVGhvckRldGFsaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Filme/VingadoresDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcVmluZ2Fkb3Jlc0RldGFsaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Funcionario/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cQ3JpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Funcionario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Funcionario/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Funcionario/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Funcionario/Funcionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRnVuY2lvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Shared/_LayoutDeslogado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXNsb2dhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/20157027/5º Período/Desenvolvimento Web com .NET Core/Av2/CineXpress/CineXpress.View/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qbvydxd3vu

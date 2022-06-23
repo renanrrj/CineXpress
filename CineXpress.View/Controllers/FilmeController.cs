@@ -14,9 +14,6 @@ namespace CineXpress.View.Controllers
         {
             db = new Context_CineXpress();
         }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Filme()
         {
             List<TbFilme> oFilme = db.TbFilme.ToList();
@@ -27,7 +24,6 @@ namespace CineXpress.View.Controllers
         public ActionResult CarrosDetalhe(int Id)
         {
             TbFilme oFilme = db.TbFilme.Find(Id);
-            //List<TbFilme> oFilme = db.TbFilme.ToList();
             return View(oFilme);
         }
         public ActionResult ThorDetalhe(int id)
@@ -94,13 +90,6 @@ namespace CineXpress.View.Controllers
             db.SaveChanges();
             return RedirectToAction("Filme");
         }
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Filme()
-        //{
-        //    List<TbFilme> oFilme = db.TbFilme.ToList();
-        //    return View(oFilme);
-        //}
 
         // GET: FuncionarioController/Delete/5
         public ActionResult Delete(int id)
