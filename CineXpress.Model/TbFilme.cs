@@ -17,24 +17,40 @@ namespace CineXpress.Model
         }
 
         [Key]
+        [Column("id")]
         [Display(Name = "Cód. Filme")]
         public int Id { get; set; }
+
+
+        [Required]
+        [Column("NomeFilme")]
         [StringLength(50)]
         [Unicode(false)]
         [Display(Name = "Título")]
         public string NomeFilme { get; set; }
-        
+
+        [Required]
+        [Column("Sinopse")]
         [StringLength(100)]
         [Unicode(false)]
         [Display(Name = "Sinopse")]
         public string Sinopse { get; set; }
+
+        [Required]
+        [Column("Duracao")]
         [Display(Name = "Tempo de duração")]
+
+
         public TimeSpan? Duracao { get; set; }
+
+        [Required]
+        [Column("Classificacao")]
         [StringLength(10)]
         [Unicode(false)]
         [Display(Name = "Classificação")]
         public string Classificacao { get; set; }
-        
+       
+
 
         [InverseProperty("IdFilmeNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }

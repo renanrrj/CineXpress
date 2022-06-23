@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using CineXpress.View.Controllers;
 
 namespace CineXpress.View.Controllers
 {
@@ -13,19 +14,47 @@ namespace CineXpress.View.Controllers
         {
             db = new Context_CineXpress();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Filme()
         {
-            List<TbFilme> oLista = db.TbFilme.ToList();
-            return View(oLista);
+            List<TbFilme> oFilme = db.TbFilme.ToList();
+            return View(oFilme);
         }
 
         // GET: FuncionarioController/Details/5
-        public ActionResult Detalhe(int id)
+        public ActionResult CarrosDetalhe(int Id)
+        {
+            TbFilme oFilme = db.TbFilme.Find(Id);
+            //List<TbFilme> oFilme = db.TbFilme.ToList();
+            return View(oFilme);
+        }
+        public ActionResult ThorDetalhe(int id)
         {
             TbFilme oFilme = db.TbFilme.Find(id);
             return View(oFilme);
         }
-
+        public ActionResult HotWheelsDetalhe(int id)
+        {
+            TbFilme oFilme = db.TbFilme.Find(id);
+            return View(oFilme);
+        }
+        public ActionResult VingadoresDetalhe(int id)
+        {
+            TbFilme oFilme = db.TbFilme.Find(id);
+            return View(oFilme);
+        }
+        public ActionResult BatmanDetalhe(int id)
+        {
+            TbFilme oFilme = db.TbFilme.Find(id);
+            return View(oFilme);
+        }
+        public ActionResult MaxSteelDetalhe(int id)
+        {
+            TbFilme oFilme = db.TbFilme.Find(id);
+            return View(oFilme);
+        }
         // GET: FuncionarioController/Create
         public ActionResult Criar()
         {
@@ -65,6 +94,13 @@ namespace CineXpress.View.Controllers
             db.SaveChanges();
             return RedirectToAction("Filme");
         }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Filme()
+        //{
+        //    List<TbFilme> oFilme = db.TbFilme.ToList();
+        //    return View(oFilme);
+        //}
 
         // GET: FuncionarioController/Delete/5
         public ActionResult Delete(int id)

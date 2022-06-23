@@ -1,19 +1,37 @@
 ﻿@model CineXpress.Model.TbFilme
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "ThorDetalhe";
 }
-<style>.cor{ color:white;
+<style>.cor
+{ 
+    color:white;
+}
+teste
+{
+    display:inline-block;
+}
+.row{
+    font-family:Arial;
+    font-style:initial;
+    Font-weight:bold;
+    font-size:larger;
+}
+ </style>
 
-    }</style>
+<h1 class="cor">Detalhes do Filme</h1>
 
-<h1 class="cor" >Excluir Filme</h1>
-
-<h3 class="cor">Você está certo disso?</h3>
 <div class="cor">
-    
+      
     <hr />
+        <div class="text">
+       <img class="teste" src="/img/thor1.jpg" height="400px" width="500px" />
+        </div>
+
+
+
     <dl class="row">
+      
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.NomeFilme)
         </dt>
@@ -38,11 +56,10 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Duracao)
         </dd>
+     
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a  asp-controller="Home" asp-action="Index">Voltar para página principal</a>
-    </form>
+</div>
+<div>
+    <a asp-action="Editar" asp-route-id="@Model?.Id">Edit</a> |
+    <a  asp-controller="Home" asp-action="Index">Voltar para página principal</a>
 </div>

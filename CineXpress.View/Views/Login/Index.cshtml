@@ -3,7 +3,6 @@
     Layout="_LayoutDeslogado";
     ViewData["Title"] = "Login";
 }
-
 @if (TempData["MensagemErro"] != null)
 {
     <div class="alert alert-danger" role="alert">
@@ -14,9 +13,15 @@
 <style>.cor{ color:white;
 
     }</style>
+  
     
 
+
+
+
 <link rel="stylesheet" href="~/css/Login-Page.css" />
+
+
 <div class="container-fluid ps-md-0">
   <div class="row g-0">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
@@ -38,11 +43,18 @@
                   <label for="floatingPassword">Password</label>
                 </div>
 
+
+                
+
            
                 <div class="d-grid">
                   <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Login</button>
                  
                 </div>
+
+
+                
+
 
               </form>
             </div>

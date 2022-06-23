@@ -2,13 +2,18 @@
 
 @{
     ViewData["Title"] = "Detalhes";
+}<style>
+.cor{
+    color:white
 }
+</style>
 
 <h1>Detalhes</h1>
 
 <div>
     <h4>TbFuncionario</h4>
     <hr />
+    <div class="cor">
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.NomeFuncionario)
@@ -47,6 +52,7 @@
             @Html.DisplayFor(model => model.Celular)
         </dd>
     </dl>
+    </div>
 </div>
 <div>
     <a asp-action="Editar" asp-route-id="@Model?.Id">Edit</a> |
