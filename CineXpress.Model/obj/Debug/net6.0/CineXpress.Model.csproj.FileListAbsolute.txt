@@ -110,3 +110,17 @@ D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpr
 D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.pdb
 D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.genruntimeconfig.cache
 D:\Documents\20157027\5º Período\Desenvolvimento Web com .NET Core\Av2\CineXpress\CineXpress.Model\obj\Debug\net6.0\ref\CineXpress.Model.dll
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.deps.json
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.runtimeconfig.json
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.dll
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\bin\Debug\net6.0\CineXpress.Model.pdb
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.csproj.AssemblyReference.cache
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.AssemblyInfoInputs.cache
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.AssemblyInfo.cs
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.csproj.CoreCompileInputs.cache
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.dll
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\refint\CineXpress.Model.dll
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.pdb
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\CineXpress.Model.genruntimeconfig.cache
+D:\Documentos\rNz\Projetos\2022\C#\renanrrj\renanrrj\CineXpress\CineXpress.Model\obj\Debug\net6.0\ref\CineXpress.Model.dll
