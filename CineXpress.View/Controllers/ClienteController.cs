@@ -56,12 +56,12 @@ namespace CineXpress.View.Controllers
         public ActionResult Editar(int id, TbCliente oCat)
         {
             var oCatBanco = db.TbCliente.Find(id);
-            oCatBanco.NomeCadastro = oCat.NomeCadastro;
-            oCatBanco.Email = oCat.Email;
-            oCatBanco.Senha = oCat.Senha;
-            oCatBanco.Cpf = oCat.Cpf;
-            oCatBanco.DataNascimento = oCat.DataNascimento;
-            oCatBanco.Celular = oCat.Celular;
+            oCatBanco.CliNome = oCat.CliNome;
+            oCatBanco.CliEmail = oCat.CliEmail;
+            oCatBanco.CliSenha = oCat.CliSenha;
+            oCatBanco.CliCpf = oCat.CliCpf;
+            oCatBanco.CliDataNascimento = oCat.CliDataNascimento;
+            oCatBanco.CliCelular = oCat.CliCelular;
             db.Entry(oCatBanco).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Cliente");

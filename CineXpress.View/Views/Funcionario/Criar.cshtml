@@ -11,36 +11,36 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Criar">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-valFunIdation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NomeFuncionario" class="control-label"></label>
-                <input asp-for="NomeFuncionario" class="form-control" />
-                <span asp-validation-for="NomeFuncionario" class="text-danger"></span>
+                <label asp-for="FunNome" class="control-label"></label>
+                <input asp-for="FunNome" class="form-control" />
+                <span asp-valFunIdation-for="FunNome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+                <label asp-for="FunEmail" class="control-label"></label>
+                <input asp-for="FunEmail" class="form-control" />
+                <span asp-valFunIdation-for="FunEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
+                <label asp-for="FunSenha" class="control-label"></label>
+                <input asp-for="FunSenha" class="form-control" />
+                <span asp-valFunIdation-for="FunSenha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Cpf" class="control-label"></label>
-                <input asp-for="Cpf" class="form-control" />
-                <span asp-validation-for="Cpf" class="text-danger"></span>
+                <label asp-for="FunCpf" class="control-label"></label>
+                <input asp-for="FunCpf" class="form-control" />
+                <span asp-valFunIdation-for="FunCpf" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DataNascimento" class="control-label"></label>
-                <input asp-for="DataNascimento" class="form-control" />
-                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                <label asp-for="FunDataNascimento" class="control-label"></label>
+                <input asp-for="FunDataNascimento" class="form-control" />
+                <span asp-valFunIdation-for="FunDataNascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Celular" class="control-label"></label>
-                <input asp-for="Celular" class="form-control" />
-                <span asp-validation-for="Celular" class="text-danger"></span>
+                <label asp-for="FunCelular" class="control-label"></label>
+                <input asp-for="FunCelular" class="form-control" />
+                <span asp-valFunIdation-for="FunCelular" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -54,5 +54,5 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{await Html.RenderPartialAsync("_ValFunIdationScriptsPartial");}
 }

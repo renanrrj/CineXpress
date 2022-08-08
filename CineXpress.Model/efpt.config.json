@@ -30,7 +30,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "PARNAITA01\\SQLEXPRESS.CineXpressDB5p",
+   "UiHint": "DESKTOP-50E5PBV\\SQLEXPRESS.db_CineXpress",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
    "UseDbContextSplitting": false,

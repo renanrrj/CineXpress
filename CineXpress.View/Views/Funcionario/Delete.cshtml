@@ -12,45 +12,45 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeFuncionario)
+            @Html.DisplayNameFor(model => model.FunNome)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeFuncionario)
+            @Html.DisplayFor(model => model.FunNome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.FunEmail)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
+            @Html.DisplayFor(model => model.FunEmail)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Senha)
+            @Html.DisplayNameFor(model => model.FunSenha)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Senha)
+            @Html.DisplayFor(model => model.FunSenha)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cpf)
+            @Html.DisplayNameFor(model => model.FunCpf)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cpf)
+            @Html.DisplayFor(model => model.FunCpf)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataNascimento)
+            @Html.DisplayNameFor(model => model.FunDataNascimento)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataNascimento)
+            @Html.DisplayFor(model => model.FunDataNascimento)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Celular)
+            @Html.DisplayNameFor(model => model.FunCelular)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Celular)
+            @Html.DisplayFor(model => model.FunCelular)
         </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
+        <input type="hFunIdden" asp-for="FunId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Funcionario">Voltar para Lista</a>
     </form>

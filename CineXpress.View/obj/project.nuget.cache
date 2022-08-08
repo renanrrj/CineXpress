@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "62wzh2WAe3e8cl/dpqQpEhZFkjUkZ2mKAV48sb1C0xKp9hZOW0FfArDAPjspQFbqJ/AwwChleQoP/la+vLKBoA==",
-  "success": true,
+  "dgSpecHash": "78syRCh+n4uDjypUCkVvVF1QFKvSVbdiXTgH3bqtNUTquCkwpkBadyhtIqDM+BQ2mtKx2Oxu77J7ekTHSNmelA==",
+  "success": false,
   "projectFilePath": "D:\\Documentos\\rNz\\Projetos\\2022\\C#\\renanrrj\\renanrrj\\CineXpress\\CineXpress.View\\CineXpress.View.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -182,5 +182,15 @@
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Downgrade de pacote detectado: Microsoft.EntityFrameworkCore.SqlServer de 6.0.7 para 6.0.5. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n CineXpress.View -> CineXpress.Model -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.7) \r\n CineXpress.View -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

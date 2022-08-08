@@ -3141,7 +3141,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7"
         },
         "compile": {
           "bin/placeholder/CineXpress.Model.dll": {}
@@ -9770,5 +9770,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Downgrade de pacote detectado: Microsoft.EntityFrameworkCore.SqlServer de 6.0.7 para 6.0.5. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n CineXpress.View -> CineXpress.Model -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.7) \r\n CineXpress.View -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -17,42 +17,28 @@ namespace CineXpress.Model
         }
 
         [Key]
-        [Column("id")]
-        [Display(Name = "Cód. Filme")]
-        public int Id { get; set; }
-
-
-        [Required]
-        [Column("NomeFilme")]
+        [Column("fil_Id")]
+        public int FilId { get; set; }
+        [Column("fil_Nome")]
         [StringLength(50)]
         [Unicode(false)]
-        [Display(Name = "Título")]
-        public string NomeFilme { get; set; }
-
-        [Required]
-        [Column("Sinopse")]
+        public string FilNome { get; set; }
+        [Column("fil_Sinopse")]
         [StringLength(100)]
         [Unicode(false)]
-        [Display(Name = "Sinopse")]
-        public string Sinopse { get; set; }
-
-        [Required]
-        [Column("Duracao")]
-        [Display(Name = "Tempo de duração")]
-
-
-        public TimeSpan? Duracao { get; set; }
-
-        [Required]
-        [Column("Classificacao")]
+        public string FilSinopse { get; set; }
+        [Column("fil_Duracao")]
+        public TimeSpan? FilDuracao { get; set; }
+        [Column("fil_Classificacao")]
         [StringLength(10)]
         [Unicode(false)]
-        [Display(Name = "Classificação")]
-        public string Classificacao { get; set; }
-       
+        public string FilClassificacao { get; set; }
+        [Column("fil_Link")]
+        [StringLength(100)]
+        [Unicode(false)]
+        public string FilLink { get; set; }
 
-
-        [InverseProperty("IdFilmeNavigation")]
+        [InverseProperty("RelIdFilmeNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }

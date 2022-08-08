@@ -17,33 +17,32 @@ namespace CineXpress.Model
         }
 
         [Key]
-        [Display(Name = "Cód. Funcionário")]
-        public int Id { get; set; }
+        [Column("fun_Id")]
+        public int FunId { get; set; }
+        [Column("fun_Nome")]
         [StringLength(50)]
         [Unicode(false)]
-        [Display(Name = "Nome")]
-        public string NomeFuncionario { get; set; }
+        public string FunNome { get; set; }
+        [Column("fun_Email")]
         [StringLength(50)]
         [Unicode(false)]
-        [Display(Name = "E-mail")]
-        public string Email { get; set; }
+        public string FunEmail { get; set; }
+        [Column("fun_Senha")]
         [StringLength(50)]
         [Unicode(false)]
-        public string Senha { get; set; }
-        [Column("CPF")]
+        public string FunSenha { get; set; }
+        [Column("fun_CPF")]
         [StringLength(15)]
         [Unicode(false)]
-        [Display(Name = "CPF")]
-        public string Cpf { get; set; }
-        [Column(TypeName = "date")]
-        [Display(Name = "Data de Nascimento")]
-        public DateTime? DataNascimento { get; set; }
+        public string FunCpf { get; set; }
+        [Column("fun_DataNascimento", TypeName = "date")]
+        public DateTime? FunDataNascimento { get; set; }
+        [Column("fun_Celular")]
         [StringLength(12)]
         [Unicode(false)]
-        [Display(Name = "Celular")]
-        public string Celular { get; set; }
+        public string FunCelular { get; set; }
 
-        [InverseProperty("IdFuncionarioNavigation")]
+        [InverseProperty("RelIdFuncionarioNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "jJeMdQAx3xEHHB7sxRTX8yGnGzlCc7S/63kmYdw9Bfzv9QLZr3LWCJAw6g/Ser1o8XqH5HxxgGc0lvx8CR7Lhw==",
-  "success": true,
+  "dgSpecHash": "30y6G5JYTHV177RLXhTBHzb0ZBWsOQpmVL4X+A+gS6bE5nUJAyz6f8/MJVScvyTgQgC7FEsVuZW2ooKu7RG1ww==",
+  "success": false,
   "projectFilePath": "D:\\Documentos\\rNz\\Projetos\\2022\\C#\\renanrrj\\renanrrj\\CineXpress\\CineXpress.Model\\CineXpress.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -12,8 +12,8 @@
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.5\\microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.5\\microsoft.entityframeworkcore.design.6.0.5.nupkg.sha512",
-    "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.5\\microsoft.entityframeworkcore.relational.6.0.5.nupkg.sha512",
-    "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.5\\microsoft.entityframeworkcore.sqlserver.6.0.5.nupkg.sha512",
+    "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.7\\microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
+    "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.7\\microsoft.entityframeworkcore.sqlserver.6.0.7.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -47,5 +47,15 @@
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\ParNaIta-01\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Downgrade de pacote detectado: Microsoft.EntityFrameworkCore de 6.0.7 para 6.0.5. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n CineXpress.Model -> Microsoft.EntityFrameworkCore.SqlServer 6.0.7 -> Microsoft.EntityFrameworkCore.Relational 6.0.7 -> Microsoft.EntityFrameworkCore (>= 6.0.7) \r\n CineXpress.Model -> Microsoft.EntityFrameworkCore (>= 6.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

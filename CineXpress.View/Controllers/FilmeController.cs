@@ -81,10 +81,10 @@ namespace CineXpress.View.Controllers
         {
             var oCatBanco = db.TbFilme.Find(id);
 
-            oCatBanco.NomeFilme = oCat.NomeFilme;
-            oCatBanco.Classificacao = oCat.Classificacao;
-            oCatBanco.Sinopse = oCat.Sinopse;
-            oCatBanco.Duracao = oCat.Duracao;
+            oCatBanco.FilNome = oCat.FilNome;
+            oCatBanco.FilClassificacao = oCat.FilClassificacao;
+            oCatBanco.FilSinopse = oCat.FilSinopse;
+            oCatBanco.FilDuracao = oCat.FilDuracao;
 
             db.Entry(oCatBanco).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();

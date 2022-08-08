@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineXpress.View", "CineXpre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineXpress.Model", "CineXpress.Model\CineXpress.Model.csproj", "{D8F020D7-E727-48EA-B58A-FA18A90E675B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76892041-13DD-44A4-AEA2-44529D218013}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

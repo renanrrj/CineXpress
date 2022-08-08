@@ -12,22 +12,23 @@ namespace CineXpress.Model
     public partial class TbRelacional
     {
         [Key]
-        public int Id { get; set; }
-        [Column("idFilme")]
-        public int? IdFilme { get; set; }
-        [Column("idCliente")]
-        public int? IdCliente { get; set; }
-        [Column("idFuncionario")]
-        public int? IdFuncionario { get; set; }
+        [Column("rel_Id")]
+        public int RelId { get; set; }
+        [Column("rel_idFilme")]
+        public int? RelIdFilme { get; set; }
+        [Column("rel_idCliente")]
+        public int? RelIdCliente { get; set; }
+        [Column("rel_idFuncionario")]
+        public int? RelIdFuncionario { get; set; }
 
-        [ForeignKey("IdCliente")]
+        [ForeignKey("RelIdCliente")]
         [InverseProperty("TbRelacional")]
-        public virtual TbCliente IdClienteNavigation { get; set; }
-        [ForeignKey("IdFilme")]
+        public virtual TbCliente RelIdClienteNavigation { get; set; }
+        [ForeignKey("RelIdFilme")]
         [InverseProperty("TbRelacional")]
-        public virtual TbFilme IdFilmeNavigation { get; set; }
-        [ForeignKey("IdFuncionario")]
+        public virtual TbFilme RelIdFilmeNavigation { get; set; }
+        [ForeignKey("RelIdFuncionario")]
         [InverseProperty("TbRelacional")]
-        public virtual TbFuncionario IdFuncionarioNavigation { get; set; }
+        public virtual TbFuncionario RelIdFuncionarioNavigation { get; set; }
     }
 }

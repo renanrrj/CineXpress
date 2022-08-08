@@ -23,34 +23,53 @@ namespace CineXpress.Model
         public virtual DbSet<TbFuncionario> TbFuncionario { get; set; }
         public virtual DbSet<TbRelacional> TbRelacional { get; set; }
 
-       
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-JDE8Q70\\SQLEXPRESS;Initial Catalog=CineXpressDB5p;User ID=sa;Password=sa123");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-50E5PBV\\SQLEXPRESS;Initial Catalog=db_CineXpress;User ID=sa;Password=sa123");
             }
         }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<TbCliente>(entity =>
+            {
+                entity.HasKey(e => e.CliId)
+                    .HasName("PK__tb_Clien__FFECE55790D7E3C8");
+            });
+
+            modelBuilder.Entity<TbFilme>(entity =>
+            {
+                entity.HasKey(e => e.FilId)
+                    .HasName("PK__tb_Filme__AC31568466C5BA98");
+            });
+
+            modelBuilder.Entity<TbFuncionario>(entity =>
+            {
+                entity.HasKey(e => e.FunId)
+                    .HasName("PK__tb_Funci__35A70D300AF78C15");
+            });
+
             modelBuilder.Entity<TbRelacional>(entity =>
             {
-                entity.HasOne(d => d.IdClienteNavigation)
+                entity.HasKey(e => e.RelId)
+                    .HasName("PK__tb_Relac__0A3215CCCBCB0DEF");
+
+                entity.HasOne(d => d.RelIdClienteNavigation)
                     .WithMany(p => p.TbRelacional)
-                    .HasForeignKey(d => d.IdCliente)
+                    .HasForeignKey(d => d.RelIdCliente)
                     .HasConstraintName("FK_tb_Relacional_tb_Cliente");
 
-                entity.HasOne(d => d.IdFilmeNavigation)
+                entity.HasOne(d => d.RelIdFilmeNavigation)
                     .WithMany(p => p.TbRelacional)
-                    .HasForeignKey(d => d.IdFilme)
+                    .HasForeignKey(d => d.RelIdFilme)
                     .HasConstraintName("FK_tb_Relacional_tb_Filme");
 
-                entity.HasOne(d => d.IdFuncionarioNavigation)
+                entity.HasOne(d => d.RelIdFuncionarioNavigation)
                     .WithMany(p => p.TbRelacional)
-                    .HasForeignKey(d => d.IdFuncionario)
+                    .HasForeignKey(d => d.RelIdFuncionario)
                     .HasConstraintName("FK_tb_Relacional_tb_Funcionario");
             });
 

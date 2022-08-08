@@ -17,35 +17,32 @@ namespace CineXpress.Model
         }
 
         [Key]
-        [Display(Name = "Cód. Cliente")]
-        public int Id { get; set; }
+        [Column("cli_Id")]
+        public int CliId { get; set; }
+        [Column("cli_Nome")]
         [StringLength(50)]
         [Unicode(false)]
-        [Display(Name = "Nome")]
-        public string NomeCadastro { get; set; }
+        public string CliNome { get; set; }
+        [Column("cli_Email")]
         [StringLength(50)]
         [Unicode(false)]
-        [Required(ErrorMessage = "Digite o email")]
-        [Display(Name = "E-mail")]
-        public string Email { get; set; }
+        public string CliEmail { get; set; }
+        [Column("cli_Senha")]
         [StringLength(50)]
         [Unicode(false)]
-        [Required(ErrorMessage = "Digite a senha")]
-        public string Senha { get; set; }
-        [Column("CPF")]
+        public string CliSenha { get; set; }
+        [Column("cli_CPF")]
         [StringLength(15)]
         [Unicode(false)]
-        [Display(Name = "CPF")]
-        public string Cpf { get; set; }
-        [Column(TypeName = "date")]
-        [Display(Name = "Data de Nascimento")]
-        public DateTime? DataNascimento { get; set; }
+        public string CliCpf { get; set; }
+        [Column("cli_DataNascimento", TypeName = "date")]
+        public DateTime? CliDataNascimento { get; set; }
+        [Column("cli_Celular")]
         [StringLength(12)]
         [Unicode(false)]
-        [Display(Name = "Celular")]
-        public string Celular { get; set; }
+        public string CliCelular { get; set; }
 
-        [InverseProperty("IdClienteNavigation")]
+        [InverseProperty("RelIdClienteNavigation")]
         public virtual ICollection<TbRelacional> TbRelacional { get; set; }
     }
 }

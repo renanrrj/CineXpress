@@ -32,33 +32,33 @@ teste
     <dl class="row">
       
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeFilme)
+            @Html.DisplayNameFor(model => model.FilNome)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeFilme)
+            @Html.DisplayFor(model => model.FilNome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Classificacao)
+            @Html.DisplayNameFor(model => model.FilClassificacao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Classificacao)
+            @Html.DisplayFor(model => model.FilClassificacao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Sinopse)
+            @Html.DisplayNameFor(model => model.FilSinopse)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Sinopse)
+            @Html.DisplayFor(model => model.FilSinopse)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Duracao)
+            @Html.DisplayNameFor(model => model.FilDuracao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Duracao)
+            @Html.DisplayFor(model => model.FilDuracao)
         </dd>
      
     </dl>
 </div>
 <div>
-    <a asp-action="Editar" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Editar" asp-route-id="@Model?.FilId">Edit</a> |
     <a  asp-controller="Home" asp-action="Index">Voltar para página principal</a>
 </div>

@@ -13,25 +13,25 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Id) <!--_______-->
+                @Html.DisplayNameFor(model => model.FunId) <!--_______-->
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NomeFuncionario)
+                @Html.DisplayNameFor(model => model.FunNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.FunEmail)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Senha)
+                @Html.DisplayNameFor(model => model.FunSenha)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cpf)
+                @Html.DisplayNameFor(model => model.FunCpf)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
+                @Html.DisplayNameFor(model => model.FunDataNascimento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Celular)
+                @Html.DisplayNameFor(model => model.FunCelular)
             </th>
             <th></th>
         </tr>
@@ -40,30 +40,30 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Id) <!--_______-->
+                @Html.DisplayFor(modelItem => item.FunId) <!--_______-->
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NomeFuncionario)
+                @Html.DisplayFor(modelItem => item.FunNome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(modelItem => item.FunEmail)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Senha)
+                @Html.DisplayFor(modelItem => item.FunSenha)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Cpf)
+                @Html.DisplayFor(modelItem => item.FunCpf)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
+                @Html.DisplayFor(modelItem => item.FunDataNascimento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Celular)
+                @Html.DisplayFor(modelItem => item.FunCelular)
             </td>
             <td>
-                <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Editar" asp-route-FunId="@item.FunId">Editar</a> |
+                <a asp-action="Detalhes" asp-route-FunId="@item.FunId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-FunId="@item.FunId">Delete</a>
             </td>
         </tr>
 }

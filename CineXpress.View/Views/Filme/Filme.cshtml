@@ -19,16 +19,16 @@
                 @Html.DisplayNameFor(model => model.Id) <!--_______-->
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NomeFilme)
+                @Html.DisplayNameFor(model => model.FilNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Classificacao)
+                @Html.DisplayNameFor(model => model.FilClassificacao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Sinopse)
+                @Html.DisplayNameFor(model => model.FilSinopse)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Duracao)
+                @Html.DisplayNameFor(model => model.FilDuracao)
             </th>
             <th></th>
         </tr>
@@ -40,16 +40,16 @@
                 @Html.DisplayFor(modelItem => item.Id) <!--_______-->
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NomeFilme)
+                @Html.DisplayFor(modelItem => item.FilNome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Classificacao)
+                @Html.DisplayFor(modelItem => item.FilClassificacao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Sinopse)
+                @Html.DisplayFor(modelItem => item.FilSinopse)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Duracao)
+                @Html.DisplayFor(modelItem => item.FilDuracao)
             </td>
             <td>
                 <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
